@@ -174,7 +174,7 @@ void FPGA::convLowering(const std::vector<std::vector<std::vector<std::vector<fl
                     for(int w=0; w<conv_width; w++)
                     {
                         int idx = w + conv_width * h + (conv_width*conv_height) * ic;
-                        new_inputs[idx][cnt] = inputs[ic][h+y][w+x];
+                        new_inputs[idx][cnt] = inputs[ic][h+y][w+x]; 
                     }
                 }
           }
