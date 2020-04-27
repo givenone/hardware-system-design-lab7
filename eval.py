@@ -60,7 +60,7 @@ def main(args):
   model_stats = {
     'total_time': time.time()-start_time,
     'total_image': num_test_images,
-    'accuracy': float(n_correct)/float(num_test_images),
+    'accuracy': float(n_correct)/num_test_images,
     'avg_num_call': net.total_num_call[0]/num_test_images,
     'm_size': net.m_size,
     'v_size': net.v_size,
