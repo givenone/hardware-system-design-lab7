@@ -129,13 +129,11 @@ void FPGA::convLowering(const std::vector<std::vector<std::vector<std::vector<fl
   //int input_channel = inputs.size();
   int input_height = inputs[0].size();
   int input_width = inputs[0][0].size();
-
   // IMPLEMENT THIS
   // For example,
   // new_weights[0][0] = cnn_weights[0][0][0][0];
   // new_inputs[0][0] = inputs[0][0][0];
-
-      for(int c=0; c<conv_channel; c++)
+    for(int c=0; c<conv_channel; c++)
     {
       // vector row new_weight[c] 
       int cnt = 0;
@@ -149,7 +147,7 @@ void FPGA::convLowering(const std::vector<std::vector<std::vector<std::vector<fl
               }
           }
       }
-  }
+    }
 
   // first move row-wise  
   int cnt = 0;

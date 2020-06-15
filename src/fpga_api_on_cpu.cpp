@@ -154,7 +154,7 @@ void FPGA::convLowering(const std::vector<std::vector<std::vector<std::vector<fl
               }
           }
       }
-  }
+    }
 
   // first move row-wise  
   int cnt = 0;
